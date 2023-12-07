@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dsf4bm3y8oq50"
+path="res://.godot/imported/HH 2C.ogg-2316a20b02cbb851a14c4763a09deede.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/HH 2C.ogg"
+dest_files=["res://.godot/imported/HH 2C.ogg-2316a20b02cbb851a14c4763a09deede.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

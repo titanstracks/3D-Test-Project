@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://chvm8sdxosng1"
+path="res://.godot/imported/2_ZELDA MC GRAVE3.ogg-4e263aa3d09ae41ca4d1a7b21cd9afc5.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/2_ZELDA MC GRAVE3.ogg"
+dest_files=["res://.godot/imported/2_ZELDA MC GRAVE3.ogg-4e263aa3d09ae41ca4d1a7b21cd9afc5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://cpurqi5mfxti7"]
+
+[ext_resource type="Texture2D" uid="uid://cpglfv6cintx8" path="res://ASSETS/TEX/BOOK_GEM_64.png" id="1_l2g5v"]
+[ext_resource type="Texture2D" uid="uid://dpegy7m80qbk5" path="res://ASSETS/UI/0_64_4.png" id="2_86w8c"]
+
+[sub_resource type="Theme" id="Theme_hnuk2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4j7lg"]
+bg_color = Color(0.313726, 0.298039, 0.913725, 0.211765)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_detail = 1
+
+[node name="HUD" type="Node2D"]
+
+[node name="COIN_IMAGE" type="Sprite2D" parent="."]
+position = Vector2(87, 87)
+rotation = -5.49778
+texture = ExtResource("1_l2g5v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(339, -69)
+scale = Vector2(0.0581032, 0.0581032)
+texture = ExtResource("2_86w8c")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 27.0
+offset_top = 25.0
+offset_right = 67.0
+offset_bottom = 65.0
+scale = Vector2(8.71412, 4.29653)
+theme = SubResource("Theme_hnuk2")
+theme_override_styles/panel = SubResource("StyleBoxFlat_4j7lg")

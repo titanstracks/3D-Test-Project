@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bj6p6y7vok0r0"
+path="res://.godot/imported/31.Castlevania Marble.ogg-d79ab450548b08e34849d4cd9b95b4a6.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/31.Castlevania Marble.ogg"
+dest_files=["res://.godot/imported/31.Castlevania Marble.ogg-d79ab450548b08e34849d4cd9b95b4a6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

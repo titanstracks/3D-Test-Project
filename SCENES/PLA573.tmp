@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl573t2siqhnd"]
+
+[ext_resource type="Script" path="res://SCRIPTS/PLAYER.gd" id="1_8inbm"]
+[ext_resource type="PackedScene" uid="uid://bffb2ma3bjj45" path="res://ASSETS/MODELS/ONION.glb" id="2_0wicb"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xwvhr"]
+height = 1.854
+radius = 1.236
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_8inbm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.894248, 0)
+shape = SubResource("CylinderShape3D_xwvhr")
+
+[node name="VISUALS" type="Node3D" parent="."]
+
+[node name="ONION" parent="VISUALS" instance=ExtResource("2_0wicb")]
+
+[node name="CAM_MOUNT" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CAM_MOUNT"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62725, 6.3034)

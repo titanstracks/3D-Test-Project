@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dsvfyrr7hasqs"
+path="res://.godot/imported/12_MARIO YI CASTLE.ogg-1332955ede75b4e4d564842f9713b2ca.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/12_MARIO YI CASTLE.ogg"
+dest_files=["res://.godot/imported/12_MARIO YI CASTLE.ogg-1332955ede75b4e4d564842f9713b2ca.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

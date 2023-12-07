@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bs06rg77ccwri"
+path="res://.godot/imported/1_OC Doubtful.ogg-e690e98e300cebf0cb39a5ffa35c8dbc.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/1_OC Doubtful.ogg"
+dest_files=["res://.godot/imported/1_OC Doubtful.ogg-e690e98e300cebf0cb39a5ffa35c8dbc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

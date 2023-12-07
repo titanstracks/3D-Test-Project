@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://m253lb188iaq"
+path="res://.godot/imported/OC CAPTAIN STAR.ogg-b5174bcef4c6215b942be62b651290d4.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/OC CAPTAIN STAR.ogg"
+dest_files=["res://.godot/imported/OC CAPTAIN STAR.ogg-b5174bcef4c6215b942be62b651290d4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://duekfy1uyop3w"
+path="res://.godot/imported/26_SONIC AD Red MTN.ogg-7a7b1346a8025eba07a982754228d221.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/26_SONIC AD Red MTN.ogg"
+dest_files=["res://.godot/imported/26_SONIC AD Red MTN.ogg-7a7b1346a8025eba07a982754228d221.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

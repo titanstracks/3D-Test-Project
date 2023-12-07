@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bg5qgos0cd6ej"
+path="res://.godot/imported/28_TERRARIA CORRUPTION.ogg-cd683f6cdef0115c74141aaa9eb1c948.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/28_TERRARIA CORRUPTION.ogg"
+dest_files=["res://.godot/imported/28_TERRARIA CORRUPTION.ogg-cd683f6cdef0115c74141aaa9eb1c948.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

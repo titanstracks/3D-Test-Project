@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5h0xd51w54an"
+path="res://.godot/imported/Spooky Applications.ogg-36785eb2d6a3f0d6022fccda503eaf3f.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/Spooky Applications.ogg"
+dest_files=["res://.godot/imported/Spooky Applications.ogg-36785eb2d6a3f0d6022fccda503eaf3f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

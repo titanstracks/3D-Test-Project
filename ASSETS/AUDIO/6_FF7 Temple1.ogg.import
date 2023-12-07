@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c64rlwvw2241x"
+path="res://.godot/imported/6_FF7 Temple1.ogg-f01bfa2e273f4acd50dfef3236ae2cfc.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/6_FF7 Temple1.ogg"
+dest_files=["res://.godot/imported/6_FF7 Temple1.ogg-f01bfa2e273f4acd50dfef3236ae2cfc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

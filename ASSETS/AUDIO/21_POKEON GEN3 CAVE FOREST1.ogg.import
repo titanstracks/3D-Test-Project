@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cc05kbythrocv"
+path="res://.godot/imported/21_POKEON GEN3 CAVE FOREST1.ogg-681530eab8cf7aa2d2810c8e97f9ff70.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/21_POKEON GEN3 CAVE FOREST1.ogg"
+dest_files=["res://.godot/imported/21_POKEON GEN3 CAVE FOREST1.ogg-681530eab8cf7aa2d2810c8e97f9ff70.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

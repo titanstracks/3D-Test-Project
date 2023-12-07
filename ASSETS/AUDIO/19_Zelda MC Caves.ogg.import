@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bvjbu5mqhvrx1"
+path="res://.godot/imported/19_Zelda MC Caves.ogg-1db572c87dc3fdad6f96ebe3f4893b82.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/19_Zelda MC Caves.ogg"
+dest_files=["res://.godot/imported/19_Zelda MC Caves.ogg-1db572c87dc3fdad6f96ebe3f4893b82.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

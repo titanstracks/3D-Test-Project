@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://brxk8ajbw2f50"
+path="res://.godot/imported/OC SuperSonic 5.ogg-0b2a8877faddf2fd3763a16628cc7cea.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/OC SuperSonic 5.ogg"
+dest_files=["res://.godot/imported/OC SuperSonic 5.ogg-0b2a8877faddf2fd3763a16628cc7cea.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

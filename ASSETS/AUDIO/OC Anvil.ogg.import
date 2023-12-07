@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b5cyx2b47r546"
+path="res://.godot/imported/OC Anvil.ogg-93c780bf563e8d5098dd2d7850e93226.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/OC Anvil.ogg"
+dest_files=["res://.godot/imported/OC Anvil.ogg-93c780bf563e8d5098dd2d7850e93226.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

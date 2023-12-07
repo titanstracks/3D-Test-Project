@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cy85mjwahqi3o"
+path="res://.godot/imported/EDM Monochromatic 2.ogg-4f2983f8dc29d588dd0dab5d8b192734.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/EDM Monochromatic 2.ogg"
+dest_files=["res://.godot/imported/EDM Monochromatic 2.ogg-4f2983f8dc29d588dd0dab5d8b192734.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

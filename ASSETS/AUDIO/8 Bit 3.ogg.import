@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dr2dlgvqf7p4w"
+path="res://.godot/imported/8 Bit 3.ogg-b7697f39f3cd87c7485ba237402db0e0.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/8 Bit 3.ogg"
+dest_files=["res://.godot/imported/8 Bit 3.ogg-b7697f39f3cd87c7485ba237402db0e0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

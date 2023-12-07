@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ddmjf57yeotx2"
+path="res://.godot/imported/17_ZELDA LA COLOUR DUNGEON.ogg-c59ed45f2d2c93b178c0bbd12884771e.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/17_ZELDA LA COLOUR DUNGEON.ogg"
+dest_files=["res://.godot/imported/17_ZELDA LA COLOUR DUNGEON.ogg-c59ed45f2d2c93b178c0bbd12884771e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

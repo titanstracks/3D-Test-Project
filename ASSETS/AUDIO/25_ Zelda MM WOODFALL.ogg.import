@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bb2lq7viix7vf"
+path="res://.godot/imported/25_ Zelda MM WOODFALL.ogg-f50a9b489f0db649acc150965c0e7dc9.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/25_ Zelda MM WOODFALL.ogg"
+dest_files=["res://.godot/imported/25_ Zelda MM WOODFALL.ogg-f50a9b489f0db649acc150965c0e7dc9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

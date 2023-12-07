@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://25vs8j4rb3vv"
+path="res://.godot/imported/Trap 1 4.ogg-e46366e595c15728eb1d293065bb60ba.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/Trap 1 4.ogg"
+dest_files=["res://.godot/imported/Trap 1 4.ogg-e46366e595c15728eb1d293065bb60ba.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbvx07xh1n0er"
+path="res://.godot/imported/29_ZELDA MC DARK HYRULE 3_BEND.ogg-600e1a0724b4603675125a2a44789b15.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/29_ZELDA MC DARK HYRULE 3_BEND.ogg"
+dest_files=["res://.godot/imported/29_ZELDA MC DARK HYRULE 3_BEND.ogg-600e1a0724b4603675125a2a44789b15.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
