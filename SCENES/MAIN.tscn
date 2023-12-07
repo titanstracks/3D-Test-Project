@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cu2ehvaxd1iol"]
+[gd_scene load_steps=26 format=3 uid="uid://cu2ehvaxd1iol"]
 
 [ext_resource type="Texture2D" uid="uid://hxrjxptn2qhd" path="res://ASSETS/TEX/ROAD_64.png" id="1_khu28"]
 [ext_resource type="Texture2D" uid="uid://cblkt3q6o1y4h" path="res://ASSETS/TEX/SWORD_HANDLE_64.png" id="2_w8mp4"]
@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://du8r017rjl27h" path="res://ASSETS/AUDIO/EDM Clouds 3.ogg" id="3_bobgg"]
 [ext_resource type="Texture2D" uid="uid://dyeqvobbh2r4h" path="res://ASSETS/TEX/SWORD_HANDLE_2__64.png" id="4_whp2l"]
 [ext_resource type="AudioStream" uid="uid://b65xw2tgfknjp" path="res://ASSETS/AUDIO/11_PSO Ruins 2.ogg" id="5_sv5lw"]
+[ext_resource type="Texture2D" uid="uid://buh5k8r3xigeu" path="res://ASSETS/TEX/BAR_2_64.png" id="5_uui7w"]
 [ext_resource type="PackedScene" uid="uid://cl573t2siqhnd" path="res://SCENES/PLAYER.tscn" id="5_y0f8o"]
 [ext_resource type="PackedScene" uid="uid://cpurqi5mfxti7" path="res://SCENES/HUD.tscn" id="6_skb2b"]
 [ext_resource type="AudioStream" uid="uid://c64rlwvw2241x" path="res://ASSETS/AUDIO/6_FF7 Temple1.ogg" id="7_vstme"]
@@ -14,6 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://cy85mjwahqi3o" path="res://ASSETS/AUDIO/EDM Monochromatic 2.ogg" id="13_bsi0c"]
 [ext_resource type="Texture2D" uid="uid://qgtvk11s3lxv" path="res://ASSETS/TEX/BAR_64.png" id="13_t7r2h"]
 [ext_resource type="Script" path="res://SCRIPTS/HEALTH BAR.gd" id="14_86ll3"]
+[ext_resource type="AudioStream" uid="uid://rsovyjjfvy8x" path="res://ASSETS/AUDIO/COIN1.wav" id="16_nruk7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_v3jkm"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -36,6 +38,18 @@ fog_density = 0.001
 albedo_texture = ExtResource("1_khu28")
 texture_filter = 0
 
+[sub_resource type="SystemFont" id="SystemFont_1u63l"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_empom"]
+line_spacing = 3.04
+font = SubResource("SystemFont_1u63l")
+font_size = 46
+font_color = Color(0.988235, 0.937255, 0, 1)
+outline_size = 13
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 0
+shadow_offset = Vector2(1.16, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cofg5"]
 albedo_texture = ExtResource("2_w8mp4")
 uv1_triplanar = true
@@ -50,18 +64,6 @@ texture_filter = 0
 albedo_texture = ExtResource("4_whp2l")
 uv1_triplanar = true
 texture_filter = 0
-
-[sub_resource type="SystemFont" id="SystemFont_1u63l"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_empom"]
-line_spacing = 3.04
-font = SubResource("SystemFont_1u63l")
-font_size = 46
-font_color = Color(0.988235, 0.937255, 0, 1)
-outline_size = 13
-outline_color = Color(0, 0, 0, 1)
-shadow_size = 0
-shadow_offset = Vector2(1.16, 1)
 
 [node name="WORLD" type="Node3D"]
 
@@ -80,45 +82,19 @@ material_override = SubResource("StandardMaterial3D_kt26l")
 use_collision = true
 size = Vector3(25, 1, 25)
 
-[node name="BOX" type="CSGBox3D" parent="MAP"]
-transform = Transform3D(0.559077, 0, 0.829116, 0, 1, 0, -0.829116, 0, 0.559077, 62.3464, 0.500002, -2.17253)
-material_override = SubResource("StandardMaterial3D_cofg5")
-use_collision = true
-
-[node name="3_MetroidBrinstar5" type="AudioStreamPlayer3D" parent="MAP/BOX"]
-transform = Transform3D(0.559077, 0, -0.829115, 0, 1, 0, 0.829115, 0, 0.559077, -0.111794, 0.611581, -0.00868225)
-stream = ExtResource("3_bobgg")
-unit_size = 0.86
-autoplay = true
-
-[node name="BOX2" type="CSGBox3D" parent="MAP"]
-transform = Transform3D(0.78031, 0, 0.625392, 0, 1, 0, -0.625392, 0, 0.78031, -1.23889, 0.999999, 92.4674)
-material_override = SubResource("StandardMaterial3D_2ewls")
-use_collision = true
-size = Vector3(2, 2, 2)
-
-[node name="2_ZELDA MC GRAVE3" type="AudioStreamPlayer3D" parent="MAP/BOX2"]
-transform = Transform3D(0.780311, 0, -0.625393, 0, 1, 0, 0.625393, 0, 0.780311, 0.885628, 1.97845, -3.05208)
-stream = ExtResource("5_sv5lw")
-unit_size = 1.34
-autoplay = true
-
-[node name="BOX3" type="CSGBox3D" parent="MAP"]
-transform = Transform3D(0.78031, 0, 0.625392, 0, 1, 0, -0.625392, 0, 0.78031, -71.9626, 1.5, -82.3511)
-material_override = SubResource("StandardMaterial3D_0x2sv")
-use_collision = true
-size = Vector3(3, 3, 3)
-
-[node name="POE SHOP" type="AudioStreamPlayer3D" parent="MAP/BOX3"]
-transform = Transform3D(0.780311, 0, -0.625393, 0, 1, 0, 0.625393, 0, 0.780311, -0.0273571, 1.83052, 2.01289)
-stream = ExtResource("7_vstme")
-unit_size = 1.34
-autoplay = true
-
 [node name="Player" parent="." instance=ExtResource("5_y0f8o")]
 sens_horizontal = 0.575
 
 [node name="HUD" parent="Player" instance=ExtResource("6_skb2b")]
+
+[node name="AUDIO" type="Node3D" parent="Player"]
+
+[node name="MAIN_MUSIC" type="AudioStreamPlayer" parent="Player/AUDIO"]
+stream = ExtResource("13_bsi0c")
+autoplay = true
+
+[node name="COIN_AUDIO" type="AudioStreamPlayer3D" parent="Player/AUDIO"]
+stream = ExtResource("16_nruk7")
 
 [node name="SCORE" type="Label" parent="."]
 offset_left = 139.0
@@ -139,92 +115,128 @@ offset_top = -102.0
 offset_right = 64.0
 offset_bottom = -38.0
 scale = Vector2(3.09551, 3.09551)
+page = 10.0
 texture_under = ExtResource("13_t7r2h")
-texture_progress = ExtResource("13_t7r2h")
+texture_progress = ExtResource("5_uui7w")
 tint_under = Color(0, 0, 0, 1)
-tint_progress = Color(1, 0.0509804, 0.0509804, 1)
+tint_progress = Color(0.0509804, 0.827451, 1, 1)
 script = ExtResource("14_86ll3")
 
-[node name="AUDIO_MAIN" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("13_bsi0c")
-autoplay = true
+[node name="COINS" type="Node3D" parent="."]
 
-[node name="coin_1" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_1" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.56656, -7.36033)
 
-[node name="coin_2" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_2" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.56656, -24.4491)
 
-[node name="coin_3" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_3" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -41.4876, 1.56656, -76.101)
 
-[node name="coin_4" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_4" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -66.2477, 1.56656, 36.9269)
 
-[node name="coin_5" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_5" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -26.7796, 1.56656, 54.3686)
 
-[node name="coin_6" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_6" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 77.1283, 1.56656, -83.8509)
 
-[node name="coin_7" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_7" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -72.7631, 1.56656, -9.59382)
 
-[node name="coin_8" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_8" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -68.2065, 1.56656, -5.6144)
 
-[node name="coin_9" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_9" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -70.3777, 1.56656, -0.45083)
 
-[node name="coin_10" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_10" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -76.3095, 1.56656, -1.16763)
 
-[node name="coin_11" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_11" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -77.1256, 1.56656, -5.90869)
 
-[node name="coin_12" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_12" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -40.8971, 1.56656, 18.8303)
 
-[node name="coin_13" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_13" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -36.3406, 1.56656, 22.8097)
 
-[node name="coin_14" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_14" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -38.5118, 1.56656, 27.9733)
 
-[node name="coin_15" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_15" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -44.4436, 1.56656, 27.2565)
 
-[node name="coin_16" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_16" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -45.2597, 1.56656, 22.5154)
 
-[node name="coin_17" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_17" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 27.0591, 1.56656, -61.6819)
 
-[node name="coin_18" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_18" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 31.6157, 1.56656, -57.7025)
 
-[node name="coin_19" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_19" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 29.4445, 1.56656, -52.5389)
 
-[node name="coin_20" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_20" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 23.5127, 1.56656, -53.2557)
 
-[node name="coin_21" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_21" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 22.6966, 1.56656, -57.9968)
 
-[node name="coin_22" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_22" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -70.2239, 1.56656, 72.8395)
 
-[node name="coin_23" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_23" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -65.6674, 1.56656, 76.8189)
 
-[node name="coin_24" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_24" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -67.8386, 1.56656, 81.9825)
 
-[node name="coin_25" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_25" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -73.7704, 1.56656, 81.2657)
 
-[node name="coin_26" parent="." instance=ExtResource("12_0gl3v")]
+[node name="coin_26" parent="COINS" instance=ExtResource("12_0gl3v")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -74.5864, 1.56656, 76.5246)
+
+[node name="BOXES" type="Node3D" parent="."]
+
+[node name="BOX" type="CSGBox3D" parent="BOXES"]
+transform = Transform3D(0.559077, 0, 0.829116, 0, 1, 0, -0.829116, 0, 0.559077, 62.3464, 0.500002, -2.17253)
+material_override = SubResource("StandardMaterial3D_cofg5")
+use_collision = true
+
+[node name="3_MetroidBrinstar5" type="AudioStreamPlayer3D" parent="BOXES/BOX"]
+transform = Transform3D(0.559077, 0, -0.829115, 0, 1, 0, 0.829115, 0, 0.559077, -0.111794, 0.611581, -0.00868225)
+stream = ExtResource("3_bobgg")
+unit_size = 0.86
+autoplay = true
+
+[node name="BOX2" type="CSGBox3D" parent="BOXES"]
+transform = Transform3D(0.78031, 0, 0.625392, 0, 1, 0, -0.625392, 0, 0.78031, -1.23889, 0.999999, 92.4674)
+material_override = SubResource("StandardMaterial3D_2ewls")
+use_collision = true
+size = Vector3(2, 2, 2)
+
+[node name="2_ZELDA MC GRAVE3" type="AudioStreamPlayer3D" parent="BOXES/BOX2"]
+transform = Transform3D(0.780311, 0, -0.625393, 0, 1, 0, 0.625393, 0, 0.780311, 0.885628, 1.97845, -3.05208)
+stream = ExtResource("5_sv5lw")
+unit_size = 1.34
+autoplay = true
+
+[node name="BOX3" type="CSGBox3D" parent="BOXES"]
+transform = Transform3D(0.78031, 0, 0.625392, 0, 1, 0, -0.625392, 0, 0.78031, -71.9626, 1.5, -82.3511)
+material_override = SubResource("StandardMaterial3D_0x2sv")
+use_collision = true
+size = Vector3(3, 3, 3)
+
+[node name="POE SHOP" type="AudioStreamPlayer3D" parent="BOXES/BOX3"]
+transform = Transform3D(0.780311, 0, -0.625393, 0, 1, 0, 0.625393, 0, 0.780311, -0.0273571, 1.83052, 2.01289)
+stream = ExtResource("7_vstme")
+unit_size = 1.34
+autoplay = true
 
 [connection signal="value_changed" from="SCORE/TextureProgressBar" to="SCORE/TextureProgressBar" method="_on_value_changed"]

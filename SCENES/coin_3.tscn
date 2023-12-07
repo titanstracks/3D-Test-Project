@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://ba1atg5i3hiqp"]
+[gd_scene load_steps=7 format=3 uid="uid://ba1atg5i3hiqp"]
 
 [ext_resource type="Script" path="res://SCRIPTS/coin.gd" id="1_2g1yl"]
 [ext_resource type="Texture2D" uid="uid://b86udqahy5tm0" path="res://ASSETS/MODELS/coin_2_COIN_64.png" id="2_35f7a"]
-[ext_resource type="AudioStream" uid="uid://rsovyjjfvy8x" path="res://ASSETS/AUDIO/COIN1.wav" id="3_gk5fy"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fri55"]
 resource_name = "Material.002"
@@ -59,8 +58,5 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_fj752")
-
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-stream = ExtResource("3_gk5fy")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

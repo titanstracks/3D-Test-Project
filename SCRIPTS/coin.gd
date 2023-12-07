@@ -12,7 +12,8 @@ func _process(delta):
 	rotate_y(deg_to_rad(ROT_SPEED))
 
 func _on_body_entered(body):
-	audio_stream_player_3d.play()
+	$"../../Player/AUDIO/COIN_AUDIO".play()
+ 
 	Global.score += 1
 	Global.hp += 10
 	await get_tree().create_timer(.1).timeout
