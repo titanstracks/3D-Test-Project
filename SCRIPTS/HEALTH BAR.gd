@@ -1,6 +1,6 @@
 extends TextureProgressBar
 
-func _process(delta):
+func _process(_delta):
 	self.value = Global.hp
 
 	if(Global.score >= 10):
