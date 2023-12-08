@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://crhwf04l1d6f7"
+path="res://.godot/imported/Diamond Knuckles 3.ogg-e080cbbeec932b0d8475d2bbdb19b33b.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/Diamond Knuckles 3.ogg"
+dest_files=["res://.godot/imported/Diamond Knuckles 3.ogg-e080cbbeec932b0d8475d2bbdb19b33b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

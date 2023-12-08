@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://biacbf80hijq"
+path="res://.godot/imported/OC Modern Applications.ogg-9ca00a8ba61f0a3595be314035dd32c8.oggvorbisstr"
+
+[deps]
+
+source_file="res://ASSETS/AUDIO/OC Modern Applications.ogg"
+dest_files=["res://.godot/imported/OC Modern Applications.ogg-9ca00a8ba61f0a3595be314035dd32c8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

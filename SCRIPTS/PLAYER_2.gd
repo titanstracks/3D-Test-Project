@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 @onready var cam_mount = $CAM_MOUNT
-@onready var animation_player = $CollisionShape3D/VISUALS/AnimationPlayer
+@onready var animation_player = $CollisionShape3D/VISUALS/AK_template/AnimationPlayer
 
 
 @onready var visuals = $CollisionShape3D/VISUALS
@@ -28,10 +28,10 @@ func _input(event):
 		cam_mount.rotate_x(deg_to_rad(-event.relative.y))
 
 
-func _physics_process(_delta):
+func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
-		velocity.y -= gravity * _delta
+		velocity.y -= gravity * delta
 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
@@ -45,16 +45,23 @@ func _physics_process(_delta):
 		visuals.look_at(position + direction)
 		animation_player.play("RUNNING")
 			
-			
-			
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
 	else:
-		if animation_player.current_animation != "RUNNING":
-			animation_player.play("IDLE")
+		animation_player.play("IDLE")
+			
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
-
+		
+	#if direction:
+		#velocity.x = 0  
+		#animation_player.play("IDLE")
+		#
+	#else:
+		#if direction:
+			#velocity.z = 0
+			#animation_player.play("IDLE")
+		
 # Get the R_STICK direction and handle the CAMERA movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	$CAM_MOUNT/Camera3D.rotate_x(Input.get_action_strength("R_forward")*R_sens_vertical)
